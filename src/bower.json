@@ -1,0 +1,51 @@
+{
+  "name": "yu.mk.ua",
+  "description": "the official site of the Yujnoukrainsk",
+  "main": "index.js",
+  "authors": [
+    "Sergey Donchenko",
+    "<sergey.donchenko@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "laravel",
+    "yujnoukrainsk"
+  ],
+  "homepage": "https://github.com/sergey-donchenko/yu-project",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "^3.3.1",
+    "jquery-knob": "~1.2.13",
+    "footable": "~2.0.3",
+    "jquery.inputmask": "3.2.7"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "components-font-awesome": "~4.4.0",
+    "jquery-backstretch": "~2.1.0 ",
+    "bootstrap-treeview": "~1.2.0",
+    "iCheck": "~1.0.2",
+    "slimScroll": "slimscroll#~1.3.6",
+    "ckeditor": "~4.7.1",
+    "bootstrap-datepicker": "~1.5.0",
+    "bootstrap-daterangepicker": "~2.1.13",
+    "moment": "~2.10.6",
+    "moment-timezone": "~0.4.1",
+    "dropzone": "~4.2.0",
+    "galleria": "~1.4.2",
+    "highcharts": "~4.1.9",
+    "select2": "4.0.0",
+    "lightbox2": "~2.8.1"
+  },
+
+  "resolutions": {
+    "jquery": ">=2.1.4"
+  }
+}

@@ -1,0 +1,36 @@
+services:
+  laravel_app:
+    image: php:7.0-apache
+    hostname: laravel_app
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cntr_laravel_app
+    env_file:
+      - ./src/.env
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "${APP_PORT}:80"
+    environment:
+      - WEB_DOCUMENT_ROOT=/var/www/html/public/
+      - PHP_TIMEOUT=60
+    depends_on:
+      - laravel_db
+    restart: always
+
+  laravel_db:
+    image: mariadb:10.1
+    hostname: laravel_db
+    container_name: cntr_laravel_db
+    env_file:
+      - ./src/.env
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+    platform: linux/amd64  
+
+volumes:
+  dbdata:

@@ -1,0 +1,55 @@
+{
+  "name": "laravel42-in-docker",
+  "version": "1.0.0",
+  "description": "Laravel 4.2 Docker container wrapper",
+  "main": "index.js",
+  "scripts": {
+    "env_down": "docker compose --env-file ./src/.env down -v",
+    "env_build": "docker compose --env-file ./src/.env build --no-cache",
+    "env_up": "docker compose --env-file ./src/.env up",
+    "build_and_start_dev_env": "npm run env_down && npm run env_build && npm run env_up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergey-donchenko/laravel42-in-docker.git"
+  },
+  "keywords": [
+    "laravel42",
+    "dockercontainerwithapache",
+    "apachephp"
+  ],
+  "author": "Serhii Donchenko <sergey.donchenko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergey-donchenko/laravel42-in-docker/issues"
+  },
+  "homepage": "https://github.com/sergey-donchenko/laravel42-in-docker#readme",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "browserify": "^12.0.1",
+    "coffeeify": "^1.1.0",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-concurrent": "^2.0.4",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-phpunit": "^0.3.6",
+    "grunt-sass": "^2.1.0",
+    "load-grunt-config": "^0.19.0",
+    "matchdep": "^1.0.0",
+    "sass": "^1.77.4",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "grunt-contrib-sass": "^2.0.0",
+    "jshint-stylish": "^2.0.1",
+    "time-grunt": "^1.2.1"
+  }
+}
